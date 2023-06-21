@@ -23,7 +23,7 @@
  */
 
 @import Foundation;
-@import CoreAudio.AudioHardwareBase;
+@import CoreAudio.AudioHardware;
 #import "AMCoreAudioProtocols.h"
 
 /*!
