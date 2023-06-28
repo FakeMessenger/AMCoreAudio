@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		45638C3D17A5D9280042EE1E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45638C3C17A5D9280042EE1E /* Cocoa.framework */; };
-		45638C4717A5D9280042EE1E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 45638C4517A5D9280042EE1E /* InfoPlist.strings */; };
 		45638C6B17A5D9790042EE1E /* AMCoreAudioDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = 45638C6917A5D9790042EE1E /* AMCoreAudioDevice.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		45638C6C17A5D9790042EE1E /* AMCoreAudioDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 45638C6A17A5D9790042EE1E /* AMCoreAudioDevice.m */; };
 		45638C6E17A5D9DD0042EE1E /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45638C6D17A5D9DD0042EE1E /* CoreAudio.framework */; };
@@ -32,8 +31,6 @@
 		45638C3F17A5D9280042EE1E /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		45638C4017A5D9280042EE1E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		45638C4117A5D9280042EE1E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		45638C4417A5D9280042EE1E /* AMCoreAudio-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AMCoreAudio-Info.plist"; sourceTree = "<group>"; };
-		45638C4617A5D9280042EE1E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		45638C4817A5D9280042EE1E /* AMCoreAudio-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AMCoreAudio-Prefix.pch"; sourceTree = "<group>"; };
 		45638C4917A5D9280042EE1E /* AMCoreAudio.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = AMCoreAudio.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		45638C6917A5D9790042EE1E /* AMCoreAudioDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = AMCoreAudioDevice.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
@@ -129,8 +126,6 @@
 		45638C4317A5D9280042EE1E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				45638C4417A5D9280042EE1E /* AMCoreAudio-Info.plist */,
-				45638C4517A5D9280042EE1E /* InfoPlist.strings */,
 				45638C4817A5D9280042EE1E /* AMCoreAudio-Prefix.pch */,
 			);
 			name = "Supporting Files";
@@ -218,7 +213,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45638C4717A5D9280042EE1E /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,17 +232,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		45638C4517A5D9280042EE1E /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				45638C4617A5D9280042EE1E /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		45638C6117A5D9280042EE1E /* Debug */ = {
@@ -321,10 +304,11 @@
 				FRAMEWORK_VERSION = A;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AMCoreAudio/AMCoreAudio-Prefix.pch";
-				INFOPLIST_FILE = "AMCoreAudio/AMCoreAudio-Info.plist";
+				GENERATE_INFOPLIST_FILE = YES;
 				INSTALL_PATH = "@executable_path/../Frameworks";
 				LLVM_LTO = NO;
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = io.9labs.AMCoreAudio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = framework;
 			};
@@ -341,10 +325,11 @@
 				FRAMEWORK_VERSION = A;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AMCoreAudio/AMCoreAudio-Prefix.pch";
-				INFOPLIST_FILE = "AMCoreAudio/AMCoreAudio-Info.plist";
+				GENERATE_INFOPLIST_FILE = YES;
 				INSTALL_PATH = "@executable_path/../Frameworks";
 				LLVM_LTO = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = io.9labs.AMCoreAudio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = framework;
 			};
