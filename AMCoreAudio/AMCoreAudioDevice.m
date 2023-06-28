@@ -1136,7 +1136,7 @@ NSString *const AMCoreAudioDefaultClockSourceName = @"Default";
     UInt32 theSize;
 
     AudioObjectPropertyAddress address = {
-        kAudioHardwareServiceDeviceProperty_VirtualMasterVolume,
+        kAudioHardwareServiceDeviceProperty_VirtualMainVolume,
         TLD_AMCoreAudioDirectionToScope(theDirection),
         kAudioObjectPropertyElementMaster
     };
@@ -1173,7 +1173,7 @@ NSString *const AMCoreAudioDefaultClockSourceName = @"Default";
     Float32 theVolumeScalar;
 
     AudioObjectPropertyAddress address = {
-        kAudioHardwareServiceDeviceProperty_VirtualMasterVolume,
+        kAudioHardwareServiceDeviceProperty_VirtualMainVolume,
         TLD_AMCoreAudioDirectionToScope(theDirection),
         kAudioObjectPropertyElementMaster
     };
