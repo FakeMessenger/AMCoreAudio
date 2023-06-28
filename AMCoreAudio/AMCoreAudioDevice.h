@@ -24,7 +24,7 @@
 
 @import Foundation;
 @import CoreAudio.AudioHardware;
-#import "AMCoreAudioProtocols.h"
+#import <AMCoreAudio/AMCoreAudioProtocols.h>
 
 /*!
    @const AMCoreAudioDefaultClockSourceName

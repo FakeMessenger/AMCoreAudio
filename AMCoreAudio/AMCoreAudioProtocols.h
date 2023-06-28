@@ -23,7 +23,7 @@
  */
 
 @import Foundation;
-#import "AMCoreAudioTypes.h"
+#import <AMCoreAudio/AMCoreAudioTypes.h>
 
 @class AMCoreAudioDevice;
 

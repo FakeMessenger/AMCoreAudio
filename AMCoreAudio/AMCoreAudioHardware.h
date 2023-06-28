@@ -7,7 +7,7 @@
 //
 
 @import Foundation;
-#import "AMCoreAudioProtocols.h"
+#import <AMCoreAudio/AMCoreAudioProtocols.h>
 
 @interface AMCoreAudioHardware : NSObject
 
